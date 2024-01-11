@@ -24,9 +24,11 @@ const Timeline = ({
         <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
           {from}-{to}
         </time>
-        <div className="text-xl font-bold text-slate-900">{subTitle}</div>
+        <div className="text-xl font-bold text-slate-900 dark:text-gray-100">
+          {subTitle}
+        </div>
       </div>
-      <div className="text-slate-500">{children}</div>
+      <div className="text-slate-500 dark:text-gray-200">{children}</div>
     </div>
   );
 };

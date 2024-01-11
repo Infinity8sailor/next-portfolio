@@ -14,6 +14,7 @@
     "jsx": "preserve",
     "incremental": true,
     "allowUnreachableCode": true,
+    
     "plugins": [
       {
         "name": "next"
@@ -23,6 +24,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/nav.jsx"],
   "exclude": ["node_modules"]
 }
