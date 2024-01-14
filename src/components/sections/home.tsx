@@ -43,13 +43,13 @@ const HomeProfile = (props: Props) => {
                     <img className="h-8" src="./assets/linkedin_icon.png" />
                   </a>
 
-                  <a
+                  {/* <a
                     href="https://dribbble.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img className="h-8" src="./assets/youtube_icon.png" />
-                  </a>
+                  </a> */}
                 </div>
                 <div className="p-4 rounded-2xl mt-2 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
                   <div className="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]">
@@ -216,7 +216,7 @@ const HomeProfile = (props: Props) => {
             <p className="text-gray-700 dark:text-violet-100">
               Passionate Software Engineer with 2 years of experience in Web
               development and Artificial Intelligence. Enjoy working on
-              Imaginary Ideas and turning them in to working prototypes.
+              Imaginary Ideas and turning them into the working prototypes.
             </p>
 
             <h1 className="text-xl font-bold mt-6 mb-4 text-black dark:text-white">
@@ -251,7 +251,8 @@ const HomeProfile = (props: Props) => {
                 During my 9 months Internship, I worked on Last Mile Delivery
                 Robots. Trained Custom Segmenatation model on Actual Video
                 footage to detect footpath. Also, Designed end to end (
-                Warehouse To Home ) path planning algorithm in C++.
+                Warehouse To Home ) path planning algorithm in C++ to deliver
+                items straight from the Warehouse to Delivery location.
               </Timeline>
               <Timeline
                 from="2018"

@@ -84,10 +84,10 @@ const TechStack = (props: Props) => {
                 // logoColor="blue"
               />
               <Badge
-                name="React"
-                tag="Redux"
-                color="white"
-                colorTag="black"
+                name="Redux"
+                // tag="Redux"
+                // color="white"
+                colorTag="white"
                 logo="redux"
                 logoColor="blue"
               />
@@ -140,22 +140,22 @@ const TechStack = (props: Props) => {
             </div>
           </div>
           <div className="flex justify-start items-center gap-2">
-            <h1 className="bg-black text-white px-2 rounded-md">Other</h1>
-            <div className="flex flex-wrap gap-1 items-center justify-center">
+            {/* <h1 className="bg-black text-white px-2 rounded-md">Other</h1> */}
+            {/* <div className="flex flex-wrap gap-1 items-center justify-center"> */}
               {/* <img
                 className="bg-black rounded-md px-1 "
                 src="./assets/grpc-logo.png"
                 width={"80px"}
               /> */}
-               <Badge
+               {/* <Badge
                 name="gRPC"
                 // tag="Redux"
                 // color="white"
                 colorTag="white"
                 // logo="redux"
                 // logoColor="blue"
-              />
-            </div>
+              /> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

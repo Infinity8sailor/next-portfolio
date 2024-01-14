@@ -18,7 +18,7 @@ const ThemeToggleBtn = () => {
         <img
           width={"25px"}
           src={
-            currentTheme === "dark" ? "./assets/sun.png" : "./assets/moon.svg"
+            currentTheme !== "dark" ? "./assets/sun.png" : "./assets/moon.svg"
           }
         />
       </button>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Nav } from "@/components/nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,41 @@ export default function RootLayout({
   return (
     <html lang="en" className="" suppressHydrationWarning>
       <body className={` bg-slate-300 dark:bg-slate-800`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <>
+            <Nav
+              nav_id={"mainNav"}
+              class_name={"active"}
+              nav_items={[
+                {
+                  name: "Home",
+                  href: "Home_page",
+                },
+                {
+                  name: "Eco-System",
+                  href: "Eco_System",
+                },
+                {
+                  name: "Admin-io",
+                  href: "Admin_Io",
+                },
+                {
+                  name: "Elemental",
+                  href: "Elemental",
+                },
+                // {
+                //   name: "Gallary",
+                //   href: "Gallary",
+                // },
+                // {
+                //   name: "YT",
+                //   href: "YT",
+                // },
+              ]}
+            />
+            {children}
+          </>
+        </Providers>
       </body>
     </html>
   );
