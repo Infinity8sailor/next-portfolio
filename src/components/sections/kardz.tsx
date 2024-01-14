@@ -56,10 +56,10 @@ const Kardz = (props: Props) => {
         </div>
 
         <div className="flex flex-col text-xl pl-5">
-          <TickText text={"Personalised Mash-ups"} />
-          <TickText text={"Auto detect Vocals Only Regions"} />
-          <TickText text={"Create Custom playlist"} />
-          <TickText text={"Auto Demix Vocals, Drums, Bass, Others"} />
+          <TickText text={"Flash cards for Different type of content"} />
+          <TickText text={"Get cards for custom data"} />
+          <TickText text={"default list of multiple languages content"} />
+          <TickText text={"score to see the accuracy"} />
         </div>
         {/* <div className="flex flex-col">
           <div className="inline-flex text-lg items-center gap-1">
