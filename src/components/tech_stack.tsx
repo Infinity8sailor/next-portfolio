@@ -10,8 +10,8 @@ const TechStack = (props: Props) => {
         Tech Stack
       </h2>
       <div className="flex justify-center">
-        <div className="flex justify-start flex-col gap-2">
-          <div className="flex justify-start items-center gap-3">
+        <div className="flex justify-start flex-col gap-4">
+          <div className="flex flex-col lg:flex-row justify-start items-center gap-3">
             <h1 className="bg-black text-white px-2 rounded-md">Languages</h1>
             <div className="flex flex-wrap gap-1 items-center justify-center">
               <Badge name="C/C++" colorTag="white" />
@@ -48,7 +48,7 @@ const TechStack = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex justify-start items-center gap-2">
+          <div className="flex flex-col lg:flex-row justify-start items-center gap-2">
             <h1 className="bg-black text-white px-2 rounded-md">Full Stack</h1>
             <div className="flex flex-wrap gap-1 items-center justify-center">
               <Badge
@@ -101,7 +101,7 @@ const TechStack = (props: Props) => {
               />
             </div>
           </div>
-          <div className="flex justify-start items-center gap-2">
+          <div className="flex flex-col lg:flex-row justify-start items-center gap-2">
             <h1 className="bg-black text-white px-2 rounded-md">Platforms</h1>
             <div className="flex flex-wrap gap-1 items-center justify-center">
               <Badge
@@ -142,12 +142,12 @@ const TechStack = (props: Props) => {
           <div className="flex justify-start items-center gap-2">
             {/* <h1 className="bg-black text-white px-2 rounded-md">Other</h1> */}
             {/* <div className="flex flex-wrap gap-1 items-center justify-center"> */}
-              {/* <img
+            {/* <img
                 className="bg-black rounded-md px-1 "
                 src="./assets/grpc-logo.png"
                 width={"80px"}
               /> */}
-               {/* <Badge
+            {/* <Badge
                 name="gRPC"
                 // tag="Redux"
                 // color="white"

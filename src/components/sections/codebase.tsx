@@ -6,7 +6,10 @@ type Props = {};
 
 const CodeBase = (props: Props) => {
   return (
-    <div id="CodeBase" className=" flex">
+    <div
+      id="CodeBase"
+      className="flex flex-col-reverse justify-center w-full lg:flex-row"
+    >
       <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start items-end p-5 gap-2">
         <div className="text-6xl lg:text-8xl">Code Base</div>
         <div className="text-2xl lg:text-4xl">Code saving application</div>
@@ -98,7 +101,7 @@ const CodeBase = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="w-[50%] rounded-md">
+      <div className="w-full lg:w-[50%] rounded-md">
         <img className="rounded-md" src="./assets/codebase.png" />
       </div>
     </div>

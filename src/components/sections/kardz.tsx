@@ -6,7 +6,10 @@ type Props = {};
 
 const Kardz = (props: Props) => {
   return (
-    <div className="  dark:bg-gray-800 flex mt-10" id="Kardz_Page">
+    <div
+      className="  dark:bg-gray-800 flex flex-col-reverse lg:flex-row mt-10"
+      id="Kardz_Page"
+    >
       <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start items-end p-5 gap-2">
         <div className="text-6xl lg:text-8xl">Kardz</div>
         <div className="text-2xl lg:text-4xl">
@@ -84,7 +87,7 @@ const Kardz = (props: Props) => {
           </div>
         </div> */}
       </div>
-      <div className="w-[50%]">
+      <div className="w-full lg:w-[50%]">
         <img src="./assets/Kardz_demo.png" />
       </div>
     </div>

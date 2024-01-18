@@ -200,13 +200,14 @@ const HomeProfile = (props: Props) => {
           </div>
         </div>
         {/* {/* <!-- Nav Icons --> */}
-        <div className="col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 md:mr-5 sticky top-6 z-10">
-          <header className=" lg:w-fit h-[40px] p-[10px] ml-auto rounded-[16px] bg-slate-500 dark:bg-[#111111]">
+        <div className="col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 md:mr-5 sticky top-6 z-10 px-2">
+          <header className=" lg:w-fit h-[40px] p-[10px] ml-auto flex justify-center rounded-[16px] bg-slate-500 dark:bg-[#111111]">
             <ThemeToggleBtn />
+            {/* <ThemeToggleBtn /> */}
           </header>
         </div>
         {/* {/* <!-- About Me --> */}
-        <div className="bg-white dark:bg-black col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 px-3 rounded-lg">
+        <div className="bg-white dark:bg-black col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 mx-2 px-3 rounded-lg">
           {/* {/* <!-- <h1 className="tile-marker h-[600px]">THREE</h1> --> */}
           <div className=" shadow  p-6">
             <h2 className="text-xl text-black dark:text-white font-bold mb-4">
@@ -266,7 +267,7 @@ const HomeProfile = (props: Props) => {
               </Timeline>
             </div>
             {/* {/* <!-- Github Status --> */}
-            <h2 className="text-xl text-black dark:text-white font-bold mt-6 mb-4">
+            <h2 className="hidden lg:block text-xl text-black dark:text-white font-bold mt-6 mb-4">
               Github
             </h2>
             <div className="w-full flex justify-center items-center">
