@@ -13,10 +13,8 @@ const CodeBase = (props: Props) => {
       <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start items-end p-3 lg:p-5 gap-2">
         <div className="text-6xl lg:text-8xl">Code Base</div>
         <div className="text-2xl lg:text-4xl">Code saving application</div>
-        <div className="text-xl lg:text-2xl">
+        <div className="text-xl lg:text-2xl max-w-md lg:max-w-xl">
           I had created this app to save multiple solutions for same problem,
-        </div>
-        <div className="text-xl lg:text-2xl">
           since Leetcode had no such feature back in 2021.
         </div>
         <div className="flex flex-wrap justify-end gap-1">

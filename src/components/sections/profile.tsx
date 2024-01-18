@@ -8,29 +8,29 @@ const Profile = (props: Props) => {
   return (
     <div
       id="Profile_Page"
-      className="p-4  dark:bg-gray-800 flex flex-col lg:flex-row w-full"
+      className="p-2  lg:p-4 dark:bg-gray-800 flex flex-col lg:flex-row w-full"
     >
-      <div className="flex lg:justify-center w-full lg:w-[50%]">
-        <div className="flex lg:flex justify-center w-32 lg:w-64 rounded-md">
+      <div className="flex justify-center w-full lg:w-[50%] ">
+        <div className="flex lg:flex justify-center w-[50%]  rounded-md">
           <img
-            className="object-contain rounded-md"
+            className="object-contain rounded-md w-32 lg:w-64"
             src="./assets/profile_list.png"
             alt="profile_list_demo"
           />
         </div>
-        <div className="relative w-32 h-96 lg:w-72">
+        <div className="relative w-[50%] h-96">
           <img
-            className="absolute object-contain left-12 top-12 hover:z-10 "
+            className="absolute object-contain left-0 lg:left-0 top-12 hover:z-10 w-32 lg:w-64"
             src="./assets/isagi_yoichi.png"
             alt="isagi_yoichi"
           />
           <img
-            className="absolute object-contain left-24 top-24  hover:z-10"
+            className="absolute object-contain left-8 lg:left-16 top-24  hover:z-10 w-32 lg:w-64"
             src="./assets/isagi_yoichi.png"
             alt="isagi_yoichi"
           />
           <img
-            className="absolute object-contain left-36 top-36  hover:z-10"
+            className="absolute object-contain left-16 lg:left-32 top-36  hover:z-10 w-32 lg:w-64"
             src="./assets/isagi_yoichi.png"
             alt="isagi_yoichi"
           />
