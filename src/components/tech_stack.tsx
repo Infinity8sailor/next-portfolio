@@ -92,6 +92,14 @@ const TechStack = (props: Props) => {
                 logoColor="blue"
               />
               <Badge
+                name="MySQL"
+                // tag="Db"
+                // color="white"
+                colorTag="white"
+                logo="mysql"
+                // logoColor="blue"
+              />
+              <Badge
                 name="Mongo"
                 tag="Db"
                 color="white"

@@ -21,17 +21,17 @@ const Profile = (props: Props) => {
         <div className="relative w-[50%] h-96">
           <img
             className="absolute object-contain left-0 lg:left-0 top-12 hover:z-10 w-32 lg:w-64"
-            src="./assets/isagi_yoichi.png"
+            src="./assets/profile_3.png"
             alt="isagi_yoichi"
           />
           <img
             className="absolute object-contain left-8 lg:left-16 top-24  hover:z-10 w-32 lg:w-64"
-            src="./assets/isagi_yoichi.png"
+            src="./assets/profile_2.png"
             alt="isagi_yoichi"
           />
           <img
             className="absolute object-contain left-16 lg:left-32 top-36  hover:z-10 w-32 lg:w-64"
-            src="./assets/isagi_yoichi.png"
+            src="./assets/profile_1.png"
             alt="isagi_yoichi"
           />
         </div>
