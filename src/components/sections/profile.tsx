@@ -11,14 +11,14 @@ const Profile = (props: Props) => {
       className="p-4  dark:bg-gray-800 flex flex-col lg:flex-row w-full"
     >
       <div className="flex lg:justify-center w-full lg:w-[50%]">
-        <div className="flex lg:flex justify-center w-36 lg:w-64 rounded-md">
+        <div className="flex lg:flex justify-center w-32 lg:w-64 rounded-md">
           <img
             className="object-contain rounded-md"
             src="./assets/profile_list.png"
             alt="profile_list_demo"
           />
         </div>
-        <div className="relative w-36 h-96 lg:w-72">
+        <div className="relative w-32 h-96 lg:w-72">
           <img
             className="absolute object-contain left-12 top-12 hover:z-10 "
             src="./assets/isagi_yoichi.png"
@@ -36,7 +36,7 @@ const Profile = (props: Props) => {
           />
         </div>
       </div>
-      <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start p-5 gap-2">
+      <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start p-3 lg:p-5 gap-2">
         <div className="text-black dark:text-white text-6xl lg:text-8xl">
           Profile Io
         </div>
@@ -85,7 +85,7 @@ const Profile = (props: Props) => {
             logo="typescript"
           />
         </div>
-        <div className="flex flex-col text-xl pl-5 text-black dark:text-white">
+        <div className="flex flex-col text-base lg:text-xl pl-5 text-black dark:text-white">
           <TickText text={"Add Fictional/Real Characters"} checked={true} />
           <TickText text={"Explore and Analyse Different Characters"} />
           <TickText

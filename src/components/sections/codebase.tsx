@@ -10,7 +10,7 @@ const CodeBase = (props: Props) => {
       id="CodeBase"
       className="flex flex-col-reverse justify-center w-full lg:flex-row"
     >
-      <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start items-end p-5 gap-2">
+      <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start items-end p-3 lg:p-5 gap-2">
         <div className="text-6xl lg:text-8xl">Code Base</div>
         <div className="text-2xl lg:text-4xl">Code saving application</div>
         <div className="text-xl lg:text-2xl">
@@ -19,7 +19,7 @@ const CodeBase = (props: Props) => {
         <div className="text-xl lg:text-2xl">
           since Leetcode had no such feature back in 2021.
         </div>
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap justify-end gap-1">
           <Badge
             name="React"
             tag="Js"
@@ -62,7 +62,7 @@ const CodeBase = (props: Props) => {
           />
         </div>
 
-        <div className="flex flex-col text-xl pl-5">
+        <div className="flex flex-col text-base lg:text-xl pl-5">
           <TickText text={"Add Problem details and solution"} />
           <TickText text={"Multiple solutions can be added."} />
           <TickText

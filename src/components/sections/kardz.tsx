@@ -15,7 +15,7 @@ const Kardz = (props: Props) => {
         <div className="text-2xl lg:text-4xl">
           Flash card app for custom content and links{" "}
         </div>
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap justify-end gap-1">
           <Badge
             name="React"
             tag="Js"
@@ -58,7 +58,7 @@ const Kardz = (props: Props) => {
           />
         </div>
 
-        <div className="flex flex-col text-xl pl-5">
+        <div className="flex flex-col text-base lg:text-xl pl-5">
           <TickText text={"Flash cards for Different type of content"} />
           <TickText text={"Get cards for custom data"} />
           <TickText text={"default list of multiple languages content"} />
