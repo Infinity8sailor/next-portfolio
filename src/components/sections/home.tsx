@@ -1,8 +1,8 @@
 import React from "react";
-import { Badge } from "@/components/badge";
 import Timeline from "@/components/timeline";
 import ThemeToggleBtn from "../toggle_theme_button";
 import TechStack from "../tech_stack";
+import { DomainTag } from "../custom_tags";
 
 type Props = {};
 
@@ -160,7 +160,7 @@ const HomeProfile = (props: Props) => {
                 </div>
 
                 <a
-                  href="./resource/Vaibhav_Dasharathe_15_Oct_2023.pdf"
+                  href="./resource/Vaibhav_Dasharathe_19_Jan_2024.pdf"
                   target="_blank"
                   className="inline-flex gap-2 items-center mx-auto bg-gradient-to-r duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
                 >
@@ -210,6 +210,12 @@ const HomeProfile = (props: Props) => {
         <div className="bg-white dark:bg-black col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 mx-2 px-3 rounded-lg">
           {/* {/* <!-- <h1 className="tile-marker h-[600px]">THREE</h1> --> */}
           <div className=" shadow  p-6">
+            <div className="w-full flex flex-wrap gap-2 lg:gap-4 px-5 pb-2 justify-center">
+              <DomainTag> Web Developement </DomainTag>
+              <DomainTag> Artificial Intelligence </DomainTag>
+              <DomainTag> System Design </DomainTag>
+              <DomainTag> Problem Solving </DomainTag>
+            </div>
             <h2 className="text-xl text-black dark:text-white font-bold mb-4">
               About Me
             </h2>
@@ -218,6 +224,8 @@ const HomeProfile = (props: Props) => {
               Passionate Software Engineer with 2 years of experience in Web
               development and Artificial Intelligence. Enjoy working on
               Imaginary Ideas and turning them into the working prototypes.
+              Worked on 10+ React.js Projects implementing advanced
+              functionalities and Complex cross connectivity.
             </p>
 
             <h1 className="text-xl font-bold mt-6 mb-4 text-black dark:text-white">
@@ -228,32 +236,53 @@ const HomeProfile = (props: Props) => {
                 from="2022"
                 to="Live"
                 title="Tata Elxsi"
-                subTitle="Software Engineer ( Artificial Intelligence )"
+                subTitle="Software Engineer"
               >
                 <h1>
-                  NLP/ LLM / ChatGpt / Web Dev / Docker Deployment / OpenCv
-                  related tasks.
+                  - Developed a Next.js Dashboard App to monitor and manage
+                  access to GPU resources across the users using prometheus.
                 </h1>
                 <h1>
-                  Worked on gRpc pipeline, connecting to Python-Backend with AI
-                  capabilities using Docker.
+                  - Worked on gRpc pipeline, connecting to Python-Backend with
+                  AI capabilities using Docker.
                 </h1>
                 <h1>
-                  Developed a React app Integrating with ChatGpt with speech
-                  recognition and translation features.
+                  - Developed a React app Integrating ChatGpt with speech
+                  recognition and translation features implementing Behaviour
+                  Trees.
+                </h1>
+                <h1>
+                  - Worked on semantic segmentation tasks using tensorflow,
+                  OpenCv and python for autonomous driving.
                 </h1>
               </Timeline>
               <Timeline
                 from="2021"
                 to="2022"
                 title="Tata Elxsi"
-                subTitle="Intern [ Machine Leaning and Robotics]"
+                subTitle="Machine Learning Intern"
               >
-                During my 9 months Internship, I worked on Last Mile Delivery
-                Robots. Trained Custom Segmenatation model on Actual Video
-                footage to detect footpath. Also, Designed end to end (
-                Warehouse To Home ) path planning algorithm in C++ to deliver
-                items straight from the Warehouse to Delivery location.
+                <h1>
+                  - During my 9 months Internship, I worked on Last Mile
+                  Delivery Robots. Trained Custom Segmenatation model on Actual
+                  Video footage to detect footpath.
+                </h1>
+
+                <h1>
+                  - Designed end to end ( Warehouse To Home ) path planning
+                  algorithm in C++ to deliver items straight from the Warehouse
+                  to Delivery location.
+                </h1>
+                {/* <h1>
+                  - Comparative study done on different path Planning Algorithms
+                  suitable for Autonomous Vehicle Driving in indoor and Outdoor
+                  Environments, Coded (in C++ and python) and Optimised for same
+                </h1> */}
+                <h1>
+                  - Implemented Cloud Multi-Robots Architecture on Kubernetes.
+                  Successfully tested Cluster network communication through DDS
+                  layer of Ros2 Framework.
+                </h1>
               </Timeline>
               <Timeline
                 from="2018"
@@ -262,8 +291,8 @@ const HomeProfile = (props: Props) => {
                 subTitle="B.Tech"
               >
                 I studied Production Engineering here, Explored Research domains
-                under ISRO Lab in Metallury and Nano-Technology. Participated in
-                Robotics and Ai Competitions/Hackthons.
+                under ISRO Lab in Metallurgy and Nano-Technology. Participated
+                in Robotics and Ai Competitions/Hackthons.
               </Timeline>
             </div>
             {/* {/* <!-- Github Status --> */}

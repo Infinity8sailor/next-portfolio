@@ -17,7 +17,7 @@ const MusicAi = (props: Props) => {
         <div className="w-full lg:w-[50%] font-[roboto] flex flex-col justify-center lg:justify-start p-5 gap-2">
           <div className="text-6xl lg:text-8xl">Music AI</div>
           <div className="text-2xl lg:text-4xl">
-            React and Electron based Windows App for autogerating personalised
+            React and Electron based Windows App for autogenerating personalised
             Mashup songs
           </div>
           <div className="flex flex-wrap gap-1">
