@@ -6,7 +6,7 @@ const Workflows = (props: Props) => {
   return (
     <div>
       <div
-        id="Algo"
+        id="Workflow"
         className="flex items-center w-full min-h-screen h-fit flex-col  relative"
       >
         <div className="h-screen w-full m-20">

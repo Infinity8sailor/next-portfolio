@@ -8,7 +8,7 @@ const Profile = (props: Props) => {
   return (
     <div
       id="Profile_Page"
-      className="p-2  lg:p-4 dark:bg-gray-800 flex flex-col lg:flex-row w-full"
+      className="p-2  lg:p-4 dark:bg-transparent flex flex-col lg:flex-row w-full"
     >
       <div className="flex justify-center w-full lg:w-[50%] ">
         <div className="flex lg:flex justify-center w-[50%]  rounded-md">

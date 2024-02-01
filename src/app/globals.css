@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.dev .test {
-  display: none;
-}
-.active,
-#AdminNav,
-#ElementNav {
-  background-color: rgb(135, 135, 255);
-}
-.activeSub {
-  background-color: rgb(147, 255, 205);
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

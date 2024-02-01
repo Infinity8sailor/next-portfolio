@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { Nav } from "@/components/nav";
+import { TsParticle } from "@/components/TsParticles";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,29 +19,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="" suppressHydrationWarning>
-      <body className={` bg-slate-300 dark:bg-slate-800`}>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className={` bg-sky-100 dark:bg-slate-950`}>
         <Providers>
+          <TsParticle />
+
           <>
             <Nav
-              nav_id={"mainNav"}
-              class_name={"active"}
               nav_items={[
                 {
                   name: "Home",
-                  href: "Home_page",
+                  href: "/",
                 },
                 {
                   name: "Eco-System",
-                  href: "Eco_System",
+                  href: "/EcoSystem",
                 },
                 {
                   name: "Elemental",
-                  href: "Elemental",
+                  href: "/Elemental",
                 },
                 {
                   name: "Admin-io",
-                  href: "Admin_Io",
+                  href: "/AdminIo",
+                },
+                {
+                  name: "Workflows",
+                  href: "/Workflows",
                 },
                 // {
                 //   name: "Gallary",
@@ -51,7 +57,8 @@ export default function RootLayout({
                 // },
               ]}
             />
-            {children}
+            <div className="w-full h-full">{children}</div>
+            <Footer />
           </>
         </Providers>
       </body>

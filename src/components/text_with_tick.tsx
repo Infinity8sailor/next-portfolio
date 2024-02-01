@@ -5,7 +5,7 @@ type Props = {
   text: string;
 };
 
-const TickText = ({ checked = true, text = "Info" }: Props) => {
+const TickText = ({ checked = false, text = "Info" }: Props) => {
   return (
     <div>
       <label className="flex gap-2">
