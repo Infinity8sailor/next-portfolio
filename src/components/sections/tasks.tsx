@@ -5,18 +5,17 @@ import Project from "../project";
 
 type Props = {};
 
-const Kardz = (props: Props) => {
+const Tasks = (props: Props) => {
   return (
     <>
       <Project
-        images={["./assets/Kardz_demo.png"]}
-        side="right"
-        id="Kardz_Page"
-        title="Kardz"
-        desc="Flash card app for custom content and links"
+        images={["./assets/tasks_demo_1.png"]}
+        side="left"
+        id="Tasks_Page"
+        title="Tasks"
+        desc="A To do list App."
         badges={
           <>
-            {" "}
             <Badge
               name="React"
               tag="Js"
@@ -62,35 +61,17 @@ const Kardz = (props: Props) => {
           <>
             <TickText
               checked
-              text={"Flash cards for Different type of content"}
+              text={"Add tasks with timeline and Project assigned to"}
             />
+            <TickText checked text={"Quick Sub-task adder"} />
+            <TickText checked text={"Sort tasks based on data and status"} />
             <TickText
               checked
-              text={"default list of multiple languages content"}
+              text={"Mini tasks view to access tasks on other pages"}
             />
-            <TickText checked text={"score to see the accuracy"} />
-            <TickText text={"Get cards for custom data"} />
-          </>
-        }
-        links={
-          <>
-            <div className="inline-flex text-lg items-center gap-1 font-bold mt-5 mr-10">
-              Live :
-              <a
-                className="flex items-center gap-2 font-bold"
-                href="https://kardz.vercel.app/"
-                target="_blank"
-              >
-                Link
-                <img
-                  className="dark:bg-white p-1 rounded-sm"
-                  height={25}
-                  width={25}
-                  src="./assets/export.png"
-                  alt="redirect_ico"
-                />
-              </a>
-            </div>
+            <TickText
+              text={"Automate the Cron tasks with Ritual-io ( Rein )"}
+            />
           </>
         }
       />
@@ -98,4 +79,4 @@ const Kardz = (props: Props) => {
   );
 };
 
-export default Kardz;
+export default Tasks;

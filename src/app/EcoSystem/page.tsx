@@ -8,7 +8,7 @@ const EcoSystem = (props: Props) => {
     //   id="Eco_System"
       className="flex items-center w-full  lg:min-h-screen h-fit flex-col  relative"
     >
-      <div className="lg:h-screen w-full m-10">
+      <div className="lg:h-screen w-full p-5  lg:p-20">
         <iframe
           className="w-full h-[300px] lg:h-full"
           // style="border: none"

@@ -30,7 +30,7 @@ const Project = ({
   links,
 }: Props) => {
   return (
-    <div id={id} className="flex flex-col gap-1 justify-center z-10">
+    <div id={id} className="flex flex-col gap-1 justify-center z-10 pt-10">
       <div
         className={`flex  ${
           side === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -83,7 +83,9 @@ const Project = ({
           </div>
         </div>
       </div>
-      <div className="w-full my-10 flex justify-center ">{extra1}</div>
+      { (
+        <div className="w-full py-5 flex justify-center ">{extra1}</div>
+      )}
     </div>
   );
 };

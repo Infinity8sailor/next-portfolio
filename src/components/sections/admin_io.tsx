@@ -3,6 +3,8 @@ import Kardz from "./kardz";
 import Profile from "./profile";
 import { NavSub } from "../nav";
 import { TitleText } from "../ui_minor";
+import Story from "./story";
+import Tasks from "./tasks";
 
 const tasks = [
   "Tasks Adder",
@@ -39,7 +41,6 @@ const tasks = [
 export const Admin = () => {
   return (
     <div className="flex flex-col items-center justify-center rounded-lg p-2 lg:p-10 z-10">
-
       <div className="flex flex-col p-2 justify-center items-center mb-4 gap-2">
         <TitleText> Admin Io</TitleText>
         <div className="text-2xl">
@@ -47,7 +48,7 @@ export const Admin = () => {
         </div>
         <div className="flex  flex-col gap-1 lg:gap-3 mt-2 lg:flex-row">
           {[
-            "Lines of Code : 10000+",
+            // "Lines of Code : 10000+",
             "Years into Development : 3+",
             "No. of Utilities : 100+",
           ].map((m) => (
@@ -79,7 +80,7 @@ export const Admin = () => {
 
         <div className="hidden lg:flex animate-pulse animate-duration-[4000ms]  flex-col  z-10">
           <div className="text-base px-2 font-bold rounded-t-md bg-violet-100">
-            Major Sections
+            Major Apps
           </div>
           <ul className="max-h-72 overflow-y-auto bg-violet-300 rounded-b-md flex flex-col gap-1 py-2">
             {[
@@ -128,7 +129,7 @@ type Props = {};
 const AdminIo = ({}: Props) => {
   return (
     <div id="Admin_Io" className="w-full mb-20 p-2 lg:px-10">
-      <div className="flex items-center w-full min-h-screen h-fit flex-col mb-20 p-2 lg:px-10  rounded-lg z-10">
+      <div className="flex items-center w-full min-h-screen h-fit flex-col mb-10 p-2 lg:px-10  rounded-lg z-10">
         <NavSub
           nav_items={[
             {
@@ -143,10 +144,14 @@ const AdminIo = ({}: Props) => {
             //   name: "Ritual-Io",
             //   href: "Ritual_Page",
             // },
-            // {
-            //   name: "Story",
-            //   href: "Story_Page",
-            // },
+            {
+              name: "Story",
+              href: "/AdminIo#Story_Page",
+            },
+            {
+              name: "Tasks",
+              href: "/AdminIo#Tasks_Page",
+            },
             // {
             //   name: "Gallary",
             //   href: "Gallary",
@@ -160,7 +165,8 @@ const AdminIo = ({}: Props) => {
         <Admin />
         <Kardz />
         <Profile />
-        {/* <Story/> */}
+        <Story />
+        <Tasks />
       </div>
     </div>
   );

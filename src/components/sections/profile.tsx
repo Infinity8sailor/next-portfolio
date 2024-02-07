@@ -87,11 +87,13 @@ const Profile = (props: Props) => {
         </div>
         <div className="flex flex-col text-base lg:text-xl pl-5 text-black dark:text-white">
           <TickText text={"Add Fictional/Real Characters"} checked={true} />
-          <TickText text={"Explore and Analyse Different Characters"} />
+          <TickText checked text={"Explore and Analyse Different Characters"} />
           <TickText
+            checked
             text={"Write down the incidents and story for the Character"}
           />
           <TickText
+            checked
             text={"Search for generalised Traits and make list out of it."}
           />
           <TickText text={"Auto MBTI type detector"} checked={false} />

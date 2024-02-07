@@ -9,7 +9,7 @@ const Workflows = (props: Props) => {
         id="Workflow"
         className="flex items-center w-full min-h-screen h-fit flex-col  relative"
       >
-        <div className="h-screen w-full m-20">
+        <div className="h-screen w-full p-5 lg:p-20">
           <iframe
             className="h-full w-full"
             // style="border: none"
