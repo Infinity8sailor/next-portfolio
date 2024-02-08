@@ -161,7 +161,7 @@ const HomeProfile = (props: Props) => {
                 </div>
 
                 <a
-                  href="./resource/Vaibhav_Dasharathe_19_Jan_2024.pdf"
+                  href="./resource/Vaibhav_Dasharathe_9_Feb_2024.pdf"
                   target="_blank"
                   className="inline-flex gap-2 items-center mx-auto bg-gradient-to-r duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
                 >
