@@ -128,17 +128,17 @@ type Props = {};
 
 const AdminIo = ({}: Props) => {
   return (
-    <div id="Admin_Io" className="w-full mb-20 p-2 lg:px-10">
+    <div id="admin_Io" className="w-full mb-20 p-2 lg:px-10">
       <div className="flex items-center w-full min-h-screen h-fit flex-col mb-10 p-2 lg:px-10  rounded-lg z-10">
         <NavSub
           nav_items={[
             {
               name: "Kardz",
-              href: "/AdminIo#Kardz_Page",
+              href: "/admin_io#Kardz_Page",
             },
             {
               name: "Profile",
-              href: "/AdminIo#Profile_Page",
+              href: "/admin_io#Profile_Page",
             },
             // {
             //   name: "Ritual-Io",
@@ -146,11 +146,11 @@ const AdminIo = ({}: Props) => {
             // },
             {
               name: "Story",
-              href: "/AdminIo#Story_Page",
+              href: "/admin_io#Story_Page",
             },
             {
               name: "Tasks",
-              href: "/AdminIo#Tasks_Page",
+              href: "/admin_io#Tasks_Page",
             },
             // {
             //   name: "Gallary",

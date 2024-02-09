@@ -37,15 +37,15 @@ export default function RootLayout({
                 // },
                 {
                   name: "Elemental",
-                  href: "/Elemental",
+                  href: "/elemental",
                 },
                 {
                   name: "Admin-io",
-                  href: "/AdminIo",
+                  href: "/admin_io",
                 },
                 {
                   name: "Workflows",
-                  href: "/Workflows",
+                  href: "/workflows",
                 },
                 // {
                 //   name: "Gallary",
