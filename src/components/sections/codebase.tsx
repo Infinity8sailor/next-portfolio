@@ -19,12 +19,12 @@ const CodeBase = (props: Props) => {
         side="right"
         points={
           <>
-            <TickText text={"Add Problem details and solution"} />
-            <TickText text={"Multiple solutions can be added."} />
-            <TickText
+            <TickText checked text={"Add Problem details and solution"} />
+            <TickText checked text={"Multiple solutions can be added."} />
+            <TickText checked
               text={"Code syntax highlighting for Different of languages"}
             />
-            <TickText text={"Search from list of questions available."} />
+            <TickText checked text={"Search from list of questions available."} />
           </>
         }
         links={

@@ -63,10 +63,10 @@ const MusicAi = (props: Props) => {
         }
         points={
           <>
+            <TickText checked text={"Auto detect Vocals Only Regions"} />
+            <TickText checked text={"Auto Demix Vocals, Drums, Bass, Others"} />
             <TickText text={"Personalised Mash-ups"} />
-            <TickText text={"Auto detect Vocals Only Regions"} />
             <TickText text={"Create Custom playlist"} />
-            <TickText text={"Auto Demix Vocals, Drums, Bass, Others"} />
           </>
         }
       />

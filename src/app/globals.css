@@ -5,6 +5,12 @@
 html {
   scroll-behavior: smooth;
 }
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
 
 ::-webkit-scrollbar {
   width: 0.5rem;

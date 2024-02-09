@@ -201,8 +201,8 @@ const HomeProfile = (props: Props) => {
           </div>
         </div>
         {/* {/* <!-- Nav Icons --> */}
-        <div className="col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 md:mr-5 sticky top-6 z-10 px-2">
-          <header className=" lg:w-fit h-[40px] p-[10px] ml-auto flex justify-center rounded-[16px] bg-slate-500 dark:bg-[#111111]">
+        <div className=" col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 md:mr-5 sticky top-6 z-10 px-2">
+          <header className="hidden lg:w-fit h-[40px] p-[10px] ml-auto flex justify-center rounded-[16px] bg-slate-500 dark:bg-[#111111]">
             <ThemeToggleBtn />
             {/* <ThemeToggleBtn /> */}
           </header>
@@ -240,21 +240,19 @@ const HomeProfile = (props: Props) => {
                 subTitle="Software Engineer"
               >
                 <h1>
-                  - Developed a Next.js Dashboard App to monitor and manage
-                  access to GPU resources across the users using prometheus.
+                  - Designed and Developed Next.js Dashboard App to monitor and
+                  manage role-based access to GPU and data resource.
                 </h1>
                 <h1>
-                  - Worked on gRpc pipeline, connecting to Python-Backend with
-                  AI capabilities using Docker.
+                  - Implemented gRPC framework connecting Unity and leveraging
+                  Python-Backend with Jupyter using Docker
                 </h1>
+                - Integrated ChatGpt with speech recognition and translation to
+                make React Application available in foreign language
+                <h1></h1>
                 <h1>
-                  - Developed a React app Integrating ChatGpt with speech
-                  recognition and translation features implementing Behaviour
-                  Trees.
-                </h1>
-                <h1>
-                  - Worked on semantic segmentation tasks using tensorflow,
-                  OpenCv and python for autonomous driving.
+                  - Implemented Behaviour Trees Approach to automate the finite
+                  machine’s instructive tasks having access to ChatGpt.
                 </h1>
               </Timeline>
               <Timeline
@@ -265,24 +263,19 @@ const HomeProfile = (props: Props) => {
               >
                 <h1>
                   - During my 9 months Internship, I worked on Last Mile
-                  Delivery Robots. Trained Custom Segmenatation model on Actual
-                  Video footage to detect footpath.
+                  Delivery Robots. Trained Custom Segmenatation model on
+                  Recorded Video footage to detect footpath.
                 </h1>
 
                 <h1>
                   - Designed end to end ( Warehouse To Home ) path planning
                   algorithm in C++ to deliver items straight from the Warehouse
-                  to Delivery location.
+                  to Delivery location in minimum time possible.
                 </h1>
-                {/* <h1>
-                  - Comparative study done on different path Planning Algorithms
-                  suitable for Autonomous Vehicle Driving in indoor and Outdoor
-                  Environments, Coded (in C++ and python) and Optimised for same
-                </h1> */}
+
                 <h1>
-                  - Implemented Cloud Multi-Robots Architecture on Kubernetes.
-                  Successfully tested Cluster network communication through DDS
-                  layer of Ros2 Framework.
+                  - Implemented Multi-Robot Cloud Architecture on Kubernetes to
+                  test Cluster network communication for robots.
                 </h1>
               </Timeline>
               <Timeline

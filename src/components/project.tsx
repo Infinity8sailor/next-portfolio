@@ -42,7 +42,7 @@ const Project = ({
           )}
         </div>
         <div
-          className={`w-full lg:w-[50%] font-[roboto] flex flex-col justify-center ${
+          className={`w-full lg:w-[50%] font-[roboto] flex flex-col justify-center backdrop-blur-[2px] ${
             side === "left" ? "lg:items-start" : "lg:items-end"
           } lg:justify-start p-5 gap-2`}
         >

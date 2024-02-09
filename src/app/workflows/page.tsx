@@ -4,20 +4,16 @@ type Props = {};
 
 const Workflows = (props: Props) => {
   return (
-    <div>
-      <div
-        id="Workflow"
-        className="flex items-center w-full min-h-screen h-fit flex-col  relative"
-      >
-        <div className="h-screen w-full p-5 lg:p-20">
-          <iframe
-            className="h-full w-full"
-            // style="border: none"
-            width="100%"
-            height="100%"
-            src="https://whimsical.com/embed/95LqbP4R3g8yB2HAeDqh6R"
-          ></iframe>
-        </div>
+    <div id="Workflow" className="flex items-center w-full min-h-full flex-col pt-10">
+      <div className="w-full h-full p-5 lg:p-20 flex flex-col gap-5">
+        <iframe
+          className=" h-[250px] lg:h-screen w-full"
+          src="https://whimsical.com/embed/95LqbP4R3g8yB2HAeDqh6R"
+        ></iframe>
+        <iframe
+          className=" h-[250px] lg:h-screen w-full"
+          src="https://whimsical.com/embed/SNZjiDmQgv1v52UB4Bn7ak"
+        ></iframe>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={` bg-sky-100 dark:bg-slate-950`}>
+      <body className={` bg-sky-100 dark:bg-slate-950 overflow-hidden`}>
         <Providers>
           <TsParticle />
 
@@ -31,10 +31,10 @@ export default function RootLayout({
                   name: "Home",
                   href: "/",
                 },
-                {
-                  name: "Eco-System",
-                  href: "/EcoSystem",
-                },
+                // {
+                //   name: "Eco-System",
+                //   href: "/EcoSystem",
+                // },
                 {
                   name: "Elemental",
                   href: "/Elemental",
@@ -57,8 +57,10 @@ export default function RootLayout({
                 // },
               ]}
             />
-            <div className="w-full h-full">{children}</div>
-            <Footer />
+            <div className="w-full h-full overflow-y-auto">
+              {children}
+              <Footer />
+            </div>
           </>
         </Providers>
       </body>

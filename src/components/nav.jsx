@@ -66,10 +66,10 @@ export const Nav = ({ nav_items = [{ name: "NAV", href: "HAV" }] }) => {
 
   return (
     <nav
-      className={`h-6 sticky top-0 z-50 justify-around flex gap-2 dark:bg-black bg-white`}
+      className={`h-6 sticky top-0 z-50 justify-around flex gap-2 dark:bg-black bg-white items-center`}
     >
       <div></div>
-      <ul className="flex gap-1 text-sm font-bold text-black dark:text-white">
+      <ul className="flex gap-1 text-xs lg:text-sm font-bold text-black dark:text-white">
         {nav_items.map((nav) => (
           <li
             key={nav.name + " _Nav"}

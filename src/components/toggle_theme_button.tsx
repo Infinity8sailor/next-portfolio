@@ -16,10 +16,14 @@ const ThemeToggleBtn = () => {
     transition-all duration-100 rounded-sm"
       >
         <img
+          className="hidden dark:flex"
           width={"25px"}
-          src={
-            currentTheme !== "dark" ? "./assets/sun.png" : "./assets/moon.svg"
-          }
+          src={"./assets/moon.svg"}
+        />
+        <img
+          className="flex dark:hidden"
+          width={"25px"}
+          src={"./assets/sun.png"}
         />
       </button>
     </>
