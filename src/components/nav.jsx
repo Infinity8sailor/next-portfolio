@@ -93,7 +93,7 @@ export const NavSub = ({ nav_items = [{ name: "NAV", href: "HAV" }] }) => {
   const pathname = usePathname();
   return (
     <nav
-      className={`h-6 sticky top-6 z-40 justify-around flex gap-2 rounded-b-md`}
+      className={`h-6 sticky top-0 z-40 justify-around flex gap-2 rounded-b-md`}
     >
       <ul className="flex gap-1 text-sm font-bold text-black dark:text-white rounded-md  bg-gray-400">
         {nav_items.map((nav) => (

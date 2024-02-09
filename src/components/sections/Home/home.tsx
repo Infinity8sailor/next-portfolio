@@ -11,7 +11,7 @@ const HomeProfile = (props: Props) => {
   return (
     <div
       id="Home_page"
-      className="flex items-center w-full justify-center flex-col gap-6 pb-3 "
+      className="flex items-center w-full justify-center flex-col gap-6 "
     >
       <div className="container m-auto grid grid-cols-4 auto-rows-min gap-x-2 gap-y-5">
         {/* {/* <!-- Profile Card --> */}
@@ -202,7 +202,7 @@ const HomeProfile = (props: Props) => {
         </div>
         {/* {/* <!-- Nav Icons --> */}
         <div className=" col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 md:mr-5 sticky top-6 z-10 px-2">
-          <header className="hidden lg:w-fit h-[40px] p-[10px] ml-auto flex justify-center rounded-[16px] bg-slate-500 dark:bg-[#111111]">
+          <header className="hidden lg:w-fit h-[40px] p-[10px] ml-auto  justify-center rounded-[16px] bg-slate-500 dark:bg-[#111111]">
             <ThemeToggleBtn />
             {/* <ThemeToggleBtn /> */}
           </header>
