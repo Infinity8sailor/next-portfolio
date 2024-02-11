@@ -219,7 +219,7 @@ export const TsParticle = () => {
           type: "images",
           options: {
             images: {
-              src: "./assets/snowflex.png",
+              src: "./assets/snowflex_min.png",
               //   width: 500,
               //   height: 500,
             },
