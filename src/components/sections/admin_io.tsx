@@ -5,37 +5,90 @@ import { NavSub } from "../nav";
 import { TitleText } from "../ui_minor";
 import Story from "./story";
 import Tasks from "./tasks";
+import GlowBox from "../glowBox";
 
 const tasks = [
+  // Tasks
   "Tasks Adder",
-  "Sub Task Adder",
+  "Quick Sub-Task Adder",
+  "Mini view for Tasks ",
+  "week and day viewer",
+  "Time-Status based tasks Sorting",
+  "Tasks Manager",
+  // Home page
   "Random Wallpaper",
+  "Wallpaper Changer",
   "Google Login",
   "Ultimate Search",
-  "Day logger",
-  "Graphs for daily Activities",
   "Time on Dashboard",
   "Rein Search Bar",
+  "Auto Fetch Raw Info",
+  // Day/Today
+  "Day logger",
+  "Graphs for daily Activities",
+
+  // Live Verse
+  "Sticky notes Creator",
+  "Drag and Drop support -Sticky Notes",
+  "Sticky Notes Manager",
+  // Custom Data Editor
+  "Custom Data Formatter and Viewer",
+  "Custom Data Creator",
+  // Features
   "Text To Speech",
   "Speech To Text",
-  "Story Writting App",
-  "Links Creator",
-  "IFrame Viewer",
   "Clipboard to Input Feild",
   "Text To Clipboard",
   "Html Parser",
+  "data64 PNG to File Converter",
+  "Words Extractor and Checker",
+  // Story
+  "Story Writting App",
+  "Story Adder",
+  "Lexical Based Story Editor",
+  "Story Manager",
+  // Links
+  "Links Adder",
+  "Mass Links Creator",
+  "Duplicate Links checker",
+  "sync local links",
+  "search links",
+  "links group support",
+  "Auto fetch grouped links",
+  "image support for links",
+
+  // Rituals
   "Ritual Creator",
   "Ritual Player",
+  "Ritual State Editor",
+  "Ritual Agent Editor",
+  // Profile
   "Profile Creator",
+  "Sort Fictional-Real Characters",
+  "Search characters",
+  "Character Gallary",
+  "Character Insights Adder",
+  "links Support for Profiles",
+
+  // Google CLoud Storage
   "Image Gallary",
   "Google Cloud Images Store",
+  "Upload From file or Clipboard",
+  "Image name availability Checker",
+  // Dictionary
   "English Dictionary",
   "Korean Dictionary",
   "Japanese Dictionary",
-  "Mass Links Creator",
-  "Duplicate Links Finder",
+  "Dictionary Ui similar to google",
+  // Iframe
+  "Auto IFrame Search and play",
+  "Iframe Manager",
+  // Kardz
+  "Flash Card App",
+  "Randomize Cards",
+  "Links as flash Cards",
+  "Dictionary as flash Cards",
   "Random Word Generator For kardz",
-  "Custom Data Editor",
 ];
 
 export const Admin = () => {
@@ -46,15 +99,20 @@ export const Admin = () => {
         <div className="text-2xl">
           A Personal Side project, Where Random Imaginary Ideas meet Vs-Code
         </div>
-        <div className="flex  flex-col gap-1 lg:gap-3 mt-2 lg:flex-row">
+        <div className="flex justify-center gap-1">
           {[
-            // "Lines of Code : 10000+",
-            "Years into Development : 3+",
-            "No. of Utilities : 100+",
+            ["3+", "Dev Years"],
+            ["100+", "Utilities"],
+            ["Fast", "Integration"],
           ].map((m) => (
-            <div key={m} className="text-lg font-bold">
-              {m}
-            </div>
+            <GlowBox
+              color="lightBlue"
+              direction="bottom"
+              className="p-8 flex flex-col items-center gap-2 rounded-md dark:from-[#024A3D] "
+            >
+              <h1 className="text-5xl font-bold">{m[0]}</h1>
+              <h1 className="text-2xl  text-gray-400">{m[1]}</h1>
+            </GlowBox>
           ))}
         </div>
       </div>

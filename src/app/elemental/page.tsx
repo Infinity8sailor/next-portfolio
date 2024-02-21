@@ -1,11 +1,12 @@
 import { NavSub } from "@/components/nav";
 import CodeBase from "@/components/sections/codebase";
+import Elemental from "@/components/sections/elemental";
 import MusicAi from "@/components/sections/musicAi";
 import React from "react";
 
 type Props = {};
 
-function Elemental({}: Props) {
+function ElementalSection({}: Props) {
   return (
     <div
       id="Elemental"
@@ -23,10 +24,12 @@ function Elemental({}: Props) {
           },
         ]}
       />
+
+      <Elemental mini={true} />
       <MusicAi />
       <CodeBase />
     </div>
   );
 }
 
-export default Elemental;
+export default ElementalSection;

@@ -3,7 +3,14 @@ import React from "react";
 type Props = {
   className?: string;
   color?: "blue" | "lightBlue" | "purple" | "orange" | "none";
-  darkColor?: "blue" | "lightBlue" | "purple" | "orange" | "none";
+  darkColor?:
+    | "blue"
+    | "lightBlue"
+    | "purple"
+    | "orange"
+    | "none"
+    | "darkBlue"
+    | "darkPurple";
   children: React.ReactElement | React.ReactElement[];
   direction?: "right" | "left" | "top" | "bottom";
 };
@@ -23,7 +30,8 @@ function GlowBox({
   };
   const colors = {
     blue: "from-blue-900 to-transparent",
-    lightBlue: "from-cyan-400 to-transparent",
+    lightBlue: "from-cyan-200 to-transparent",
+    // lightBlue: " to-transparent",
     purple: "from-purple-900 to-transparent",
     orange: "from-orange-400 to-transparent",
     none: "",
@@ -31,7 +39,9 @@ function GlowBox({
   const darkColors = {
     blue: "dark:from-blue-900 dark:to-transparent",
     lightBlue: "dark:from-cyan-400 dark:to-transparent",
+    darkBlue: "dark:from-[#1B2E52] dark:to-transparent",
     purple: "dark:from-purple-900 dark:to-transparent",
+    darkPurple: "dark:from-[#2D2960] dark:to-transparent",
     orange: "dark:from-orange-400 dark:to-transparent",
     none: "",
   };

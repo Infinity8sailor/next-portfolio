@@ -21,8 +21,8 @@ const HomeProfile = (props: Props) => {
             <GlowBox
               direction="left"
               color="lightBlue"
-              darkColor="blue"
-              className="rounded-[20px]"
+              darkColor="darkBlue"
+              className="rounded-[20px] "
             >
               <div className="w-full mx-auto relative text-center dark:bg-transparent px-6 rounded-[20px] mt-[200px]">
                 <img
@@ -219,8 +219,8 @@ const HomeProfile = (props: Props) => {
         <div className=" col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 z-10">
           <GlowBox
             color="lightBlue"
-            darkColor="blue"
-            className="shadow p-6 px-9  rounded-lg dark:bg-transparent backdrop-blur-md"
+            darkColor="darkPurple"
+            className="shadow p-6 px-9  rounded-lg dark:bg-transparent backdrop-blur-md bg-white "
           >
             <div className="w-full flex flex-wrap gap-2 text-xs lg:text-base lg:gap-4 px-5 pb-2 justify-center">
               <DomainTag> Web Developement </DomainTag>

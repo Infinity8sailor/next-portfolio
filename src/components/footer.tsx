@@ -6,7 +6,7 @@ const Footer = (props: Props) => {
   return (
     <footer className="flex h-10 justify-center items-center relative">
       <img
-        src="./assets/Circular_fire.png"
+        src="./assets/Circular_fire_min.png"
         className="dark:block hidden absolute object-cover h-[230px] lg:h-[900px] w-full object-top -z-10 bottom-0"
       />
       {/* <img

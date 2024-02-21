@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={` bg-sky-100 dark:bg-slate-950 overflow-hidden flex flex-col`}>
+      <body
+        className={` bg-sky-100 dark:bg-slate-950 overflow-hidden flex flex-col`}
+      >
         <Providers>
           <TsParticle />
 
