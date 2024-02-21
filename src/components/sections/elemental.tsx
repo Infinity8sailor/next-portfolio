@@ -121,6 +121,7 @@ function Elemental({ mini = false }: Props) {
                   "React Component Library",
                   "Published on NPM",
                   "Uses Tailwind & Material UI Components",
+                  "One UI, Many Apps",
                 ].map((m) => (
                   <h1 className="list-item">{m}</h1>
                 ))}
