@@ -93,10 +93,10 @@ const tasks = [
 
 export const Admin = () => {
   return (
-    <div className="flex flex-col items-center justify-center rounded-lg p-2 lg:p-10 z-10">
+    <div className="flex flex-col items-center justify-center rounded-lg p-2 lg:p-10 z-10 px-2">
       <div className="flex flex-col p-2 justify-center items-center mb-4 gap-2">
         <TitleText> Admin Io</TitleText>
-        <div className="text-2xl">
+        <div className="text-2xl text-center">
           A Personal Side project, Where Random Imaginary Ideas meet Vs-Code
         </div>
         <div className="flex justify-center gap-1">
@@ -108,10 +108,17 @@ export const Admin = () => {
             <GlowBox
               color="lightBlue"
               direction="bottom"
-              className="p-8 flex flex-col items-center gap-2 rounded-md dark:from-[#024A3D] "
+              className="p-4 md:p-8  flex flex-col justify-center items-center gap-2 rounded-md dark:from-[#024A3D] "
             >
-              <h1 className="text-5xl font-bold">{m[0]}</h1>
-              <h1 className="text-2xl  text-gray-400">{m[1]}</h1>
+              <h1 key={m[0]} className="text-2xl lg:text-5xl font-bold">
+                {m[0]}
+              </h1>
+              <h1
+                key={m[1]}
+                className="text-base text-center lg:text-2xl text-gray-400"
+              >
+                {m[1]}
+              </h1>
             </GlowBox>
           ))}
         </div>

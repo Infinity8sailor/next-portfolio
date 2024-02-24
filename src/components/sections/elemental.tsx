@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import GlowBox from "../glowBox";
 import { Button, Input, ToggleSwitch } from "react-utility-yard";
-import { ClassNames } from "@emotion/react";
 
 type Props = { mini?: boolean };
 
@@ -14,12 +13,12 @@ function Elemental({ mini = false }: Props) {
     date: "2024-02-23",
   });
   return (
-    <div className="flex flex-col items-center pt-10">
+    <div className="flex flex-col items-center pt-10 px-2">
       <h1 className="text-7xl"> Elemental</h1>
-      <h1 className="text-4xl text-gray-500 dark:text-gray-300">
+      <h1 className="text-4xl text-gray-500 dark:text-gray-300 text-center">
         Individual Experimentation and Utility Projects
       </h1>
-      <div className="flex justify-center gap-2">
+      <div className="hidden md:flex flex-col md:flex-row justify-center gap-1 md:gap-2">
         <div className="flex flex-col gap-2">
           <GlowBox
             color="lightBlue"

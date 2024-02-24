@@ -216,7 +216,7 @@ const HomeProfile = (props: Props) => {
           </header>
         </div>
         {/* {/* <!-- About Me --> */}
-        <div className=" col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 z-10">
+        <div className=" col-start-1 lg:col-start-2 col-span-4 lg:col-span-3 mt-5 z-10 px-1">
           <GlowBox
             color="lightBlue"
             darkColor="darkPurple"
