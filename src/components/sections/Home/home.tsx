@@ -171,7 +171,7 @@ const HomeProfile = (props: Props) => {
                                     </div>
 
                                     <a
-                                        href="./resource/Vaibhav_Dasharathe_9_Feb_2024.pdf"
+                                        href="./resource/Vaibhav_Dasharathe_08_Sep_2024.pdf"
                                         target="_blank"
                                         className="inline-flex gap-2 items-center mx-auto bg-gradient-to-r duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
                                     >
@@ -258,15 +258,17 @@ const HomeProfile = (props: Props) => {
                                 subTitle="Senior Software Engineer"
                             >
                                 <h1>
-                                    - Designed and Developed Next.js Dashboard
-                                    App to monitor and manage role-based access
-                                    to GPU and data resource.
+                                    - Developed a scalable Next.js App to
+                                    provide a centralized dashboard for
+                                    monitoring and managing GPU/data resources,
+                                    offering granular role-based-access controls
+                                    and plug-and-play device integration for
+                                    enhanced security and efficiency.
                                 </h1>
-
                                 <h1>
                                     - Implemented Behaviour Trees Approach to
                                     automate the finite machine’s instructive
-                                    tasks having access to ChatGpt.
+                                    tasks having access to ChatGpt/local LLMs.
                                 </h1>
                             </Timeline>
                             <Timeline
@@ -276,14 +278,22 @@ const HomeProfile = (props: Props) => {
                                 subTitle="Software Engineer"
                             >
                                 <h1>
-                                    - Implemented gRPC framework connecting
-                                    Unity and leveraging Python-Backend with
-                                    Jupyter using Docker
+                                    - Worked collaboratively with Unity team
+                                    ensuring seamless integration of features
+                                    and tasks, meeting project deadlines.
                                 </h1>
                                 <h1>
-                                    - Integrated ChatGpt with speech recognition
-                                    and translation to make React Application
-                                    available in foreign language
+                                    - Integrated ChatGpt with prompt-making
+                                    React App offering speech recognition and
+                                    translating in multiple languages
+                                </h1>
+                                <h1>
+                                    - Implemented a high-performance gRPC
+                                    framework to facilitate communication
+                                    between Unity and a Python backend,
+                                    utilizing Jupyter and Docker, enabling the
+                                    exchange of complex data structures and
+                                    real-time updates.
                                 </h1>
                             </Timeline>
                             <Timeline
