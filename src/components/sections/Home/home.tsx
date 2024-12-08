@@ -8,6 +8,35 @@ import GlowBox from "@/components/glowBox";
 
 type Props = {};
 
+const _content = {
+    resume: "./resource/Vaibhav_Dasharathe_Nov_2024.pdf",
+    summary:
+        "AI Full-Stack Engineer with 3+ years of experience in web development and AI. Proficient in React.js and Next.js, skilled in machine learning, and experienced in building scalable, efficient, and user-friendly applications.",
+    senior_engineer: [
+        "Developed a scalable Next.js Application to provide a centralized dashboard for monitoring and managing multiple GPU/data resources, offering granular role-based-access controls enhancing security",
+        "Worked collaboratively with the Unity team, ensuring seamless integration of features and tasks, while contributing to the development of Large Language Models (LLMs) to enhance AI capabilities within the project and use-cases.",
+        "Conducted in-depth research on Large Language Model (LLM) architectures. Implemented RAG pipelines to enhance LLM performance and accuracy, Leveraging innovative techniques to achieve more precise and faster responses",
+    ],
+    engineer: [
+        "Implemented a high-performance gRPC framework to facilitate communication between Unity and a Python back-end, utilizing Jupyter and Docker, enabling the exchange of complex data structures and real-time updates.",
+        "Implemented Behavior Trees Approach to automate the finite machine’s instructive tasks having access to LLMs.",
+        "Integrated ChatGpt with prompt-making React App offering speech recognition and translating from multiple languages, Converting given instruction into robotic actions for planning the execution on real-world robots.",
+    ],
+    intern_TE: [
+        "Comparative study done on different path Planning Algorithms suitable for Autonomous Vehicle Driving in Indoor and Outdoor Environments, Coded (in C++ and python) and Optimised for same.",
+        "Trained Custom Segmentation model on Recorded Video footage to detect footpaths for Last Mile Delivery Robots.",
+        "Designed end-to-end (Warehouse To Delivery Location) path planning algorithm in C++ to deliver in min time.",
+        "Implemented Multi-Robot Cloud Architecture on Kubernetes to test Cluster network communication for robots.",
+        "Created An OSM Planner which accepts both gui and terminal inputs, generating path over pixelated Open Street Map tiles with calculated approx. distance from Indoor location to Outdoor Goal and Vice-Versa Considering switching between different modes of driving. Task Achieved in C++, using Xml parser lib, Astar algorithm, OSM data, Rviz.",
+        "Recreated 3d World of targeted Area in real world for Autonomous Driving using OSM Model and Blender plugins.",
+        "Implemented Cloud Robotics Architecture on Kubernetes. Successfully tested Cluster network communication through DDS layer of Ros2 Framework. Deployment Achieved in both minikube and microk8s",
+    ],
+    intern_RL: [
+        "Worked on Ros based robots local navigation and configuration parameter tuning for custom made robots.",
+        "Robotic 5 Dof Arm Design in Fusion 360 and 3d Printed same for prototype testing with actuators and Moveit Motion planning Framework of ros system.",
+    ],
+};
+
 const HomeProfile = (props: Props) => {
     return (
         <div
@@ -171,7 +200,7 @@ const HomeProfile = (props: Props) => {
                                     </div>
 
                                     <a
-                                        href="./resource/Vaibhav_Dasharathe_08_Sep_2024.pdf"
+                                        href={_content.resume}
                                         target="_blank"
                                         className="inline-flex gap-2 items-center mx-auto bg-gradient-to-r duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
                                     >
@@ -239,12 +268,7 @@ const HomeProfile = (props: Props) => {
                         </h2>
                         {/* {/* <!-- [Adjectives] + [Professional title] + [Years of experience] + [Skills] + [Achievements] + [Career goals] --> */}
                         <p className="text-gray-700 dark:text-violet-100">
-                            Passionate Software Engineer with 2 years of
-                            experience in Web development and Artificial
-                            Intelligence. Enjoy working on Imaginary Ideas and
-                            turning them into the working prototypes. Worked on
-                            10+ React.js Projects implementing advanced
-                            functionalities and Complex cross connectivity.
+                            {_content.summary}
                         </p>
 
                         <h1 className="text-xl font-bold mt-6 mb-4 text-black dark:text-white">
@@ -255,46 +279,21 @@ const HomeProfile = (props: Props) => {
                                 from="2024"
                                 to=""
                                 title="Tata Elxsi"
-                                subTitle="Senior Software Engineer"
+                                subTitle="Senior Engineer"
                             >
-                                <h1>
-                                    - Developed a scalable Next.js App to
-                                    provide a centralized dashboard for
-                                    monitoring and managing GPU/data resources,
-                                    offering granular role-based-access controls
-                                    and plug-and-play device integration for
-                                    enhanced security and efficiency.
-                                </h1>
-                                <h1>
-                                    - Implemented Behaviour Trees Approach to
-                                    automate the finite machine’s instructive
-                                    tasks having access to ChatGpt/local LLMs.
-                                </h1>
+                                {_content.senior_engineer.map((exp, i) => (
+                                    <h1 key={"senior_engg_" + i}>- {exp}</h1>
+                                ))}
                             </Timeline>
                             <Timeline
                                 from="2022"
                                 to="2024"
                                 title="Tata Elxsi"
-                                subTitle="Software Engineer"
+                                subTitle="Engineer"
                             >
-                                <h1>
-                                    - Worked collaboratively with Unity team
-                                    ensuring seamless integration of features
-                                    and tasks, meeting project deadlines.
-                                </h1>
-                                <h1>
-                                    - Integrated ChatGpt with prompt-making
-                                    React App offering speech recognition and
-                                    translating in multiple languages
-                                </h1>
-                                <h1>
-                                    - Implemented a high-performance gRPC
-                                    framework to facilitate communication
-                                    between Unity and a Python backend,
-                                    utilizing Jupyter and Docker, enabling the
-                                    exchange of complex data structures and
-                                    real-time updates.
-                                </h1>
+                                {_content.engineer.map((exp, i) => (
+                                    <h1 key={"engg_" + i}>- {exp}</h1>
+                                ))}
                             </Timeline>
                             <Timeline
                                 from="2021"
@@ -302,25 +301,19 @@ const HomeProfile = (props: Props) => {
                                 title="Tata Elxsi"
                                 subTitle="Machine Learning Intern"
                             >
-                                <h1>
-                                    - During my 9 months Internship, I worked on
-                                    Last Mile Delivery Robots. Trained Custom
-                                    Segmenatation model on Recorded Video
-                                    footage to detect footpath.
-                                </h1>
-
-                                <h1>
-                                    - Designed end to end ( Warehouse To Home )
-                                    path planning algorithm in C++ to deliver
-                                    items straight from the Warehouse to
-                                    Delivery location in minimum time possible.
-                                </h1>
-
-                                <h1>
-                                    - Implemented Multi-Robot Cloud Architecture
-                                    on Kubernetes to test Cluster network
-                                    communication for robots.
-                                </h1>
+                                {_content.intern_TE.map((exp, i) => (
+                                    <h1 key={"engg_intern_" + i}>- {exp}</h1>
+                                ))}
+                            </Timeline>
+                            <Timeline
+                                from="2021"
+                                to="2021"
+                                title="Rigbetel Labs"
+                                subTitle="Developer Intern"
+                            >
+                                {_content.intern_RL.map((exp,i) => (
+                                    <h1 key={"engg_intern2_" + i}>- {exp}</h1>
+                                ))}
                             </Timeline>
                             <Timeline
                                 from="2018"
@@ -328,10 +321,18 @@ const HomeProfile = (props: Props) => {
                                 title="Vishwakarma Institute Of Technology, Pune"
                                 subTitle="B.Tech"
                             >
-                                I studied Production Engineering here, Explored
-                                Research domains under ISRO Lab in Metallurgy
-                                and Nano-Technology. Participated in Robotics
-                                and Ai Competitions/Hackthons.
+                                <h1>
+                                    - Explored Research domains under ISRO Lab
+                                    in Metallurgy and Nano-Technology for
+                                    advanced materials for aerospace
+                                    applications.
+                                </h1>
+                                <h1>
+                                    - Participated in Robotics and AI
+                                    competitions and hackathons, gaining
+                                    hands-on experience in automation, machine
+                                    learning, and collaborative problem-solving.
+                                </h1>
                             </Timeline>
                         </div>
                         {/* {/* <!-- Github Status --> */}
